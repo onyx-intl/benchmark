@@ -729,9 +729,19 @@ public class Benchmark extends TabActivity implements View.OnClickListener {
             mycase = mCases.get(i);
             if ( !mycase.couldFetchReport() ) continue;
             result += "============================================================\n";
-            result += mycase.getTitle() + "\n";
+	    if( mycase.getTitle() != null){
+			result += mycase.getTitle() + "\n";
+	    }
+	    else{
+			result += "\n";
+	    }
             result += "------------------------------------------------------------\n";
-            result += mycase.getResultOutput().trim() + "\n";
+	    if( mycase.getResultOutput() != null ){
+			result += mycase.getResultOutput().trim() + "\n";
+	    }
+	    else{
+			result += "\n";
+	    }
         }
         result += "============================================================\n";
 
