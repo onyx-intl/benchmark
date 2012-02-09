@@ -132,12 +132,12 @@ public class NativeTesterMicro extends NativeTester {
 //        "cascade_cond " + Opts + " -N c_cond_200	-T 200	-I 2000000",
 
         "cascade_flock " + Opts + " -N c_flock	-I 1000	",
-        "cascade_flock " + Opts + " -N c_flock_10	-P 10   -I 50000",
-        "cascade_flock " + Opts + " -N c_flock_200	-P 200	-I 5000000",
+        "cascade_flock " + Opts + " -N c_flock_10	-T 10   -I 50000",
+        "cascade_flock " + Opts + " -N c_flock_200	-T 200	-I 5000000",
 
         "cascade_fcntl " + Opts + " -N c_fcntl_1	-I 2000 	",
-        "cascade_fcntl " + Opts + " -N c_fcntl_10	-P 10 -I 20000",
-        "cascade_fcntl " + Opts + " -N c_fcntl_200	-P 200	-I 5000000",
+        "cascade_fcntl " + Opts + " -N c_fcntl_10	-T 10 -I 20000",
+        "cascade_fcntl " + Opts + " -N c_fcntl_200	-T 200	-I 5000000",
 
         "file_lock " + Opts + " -N file_lock   -I 1000         ",
 
@@ -207,17 +207,17 @@ public class NativeTesterMicro extends NativeTester {
         "pthread_create   " + Opts + " -N pthread_128		-B 128",
 //        "pthread_create   " + Opts + " -N pthread_512		-B 512",
 
-        "fork " + Opts + " -N fork_10		-B 10",
-        "fork " + Opts + " -N fork_100		-B 100  -C 100",
+//        "fork " + Opts + " -N fork_10		-B 10",
+//        "fork " + Opts + " -N fork_100		-B 100  -C 100",
 //        "fork " + Opts + " -N fork_1000		-B 1000 -C 50",
 
-        "exit " + Opts + " -N exit_10		-B 10",
-        "exit " + Opts + " -N exit_100		-B 100",
+//        "exit " + Opts + " -N exit_10		-B 10",
+//        "exit " + Opts + " -N exit_100		-B 100",
 //        "exit " + Opts + " -N exit_1000		-B 1000 -C 50",
 
-        "exit " + Opts + " -N exit_10_nolibc	-e -B 10",
+//        "exit " + Opts + " -N exit_10_nolibc	-e -B 10",
 
-        "exec " + Opts + " -N exec -B 10",
+//        "exec " + Opts + " -N exec -B 10",
 
         "system " + Opts + " -N system -I 1000000",
 
@@ -303,7 +303,6 @@ public class NativeTesterMicro extends NativeTester {
         "mmap " + Opts + " -N mmap_ru128k	-l 128k	-I 20000 -r	-f $VFILE",
         "mmap " + Opts + " -N mmap_ra8k	-l 8k	-I 2000 -r	-f MAP_ANON",
         "mmap " + Opts + " -N mmap_ra128k	-l 128k	-I 20000 -r	-f MAP_ANON",
-
         "mmap " + Opts + " -N mmap_wz8k	-l 8k	-I 5000 -w	-f /dev/zero",
         "mmap " + Opts + " -N mmap_wz128k	-l 128k	-I 50000 -w	-f /dev/zero",
 //        "mmap " + Opts + " -N mmap_wt8k	-l 8k	-I 5000 -w	-f $TFILE",
