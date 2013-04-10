@@ -238,6 +238,7 @@ public class Benchmark extends TabActivity implements View.OnClickListener {
             mCheck3D = bundle.getBoolean("3d");
             mCheckVM = bundle.getBoolean("vm");
             mCheckNative = bundle.getBoolean("native");
+            mCheckMisc = bundle.getBoolean("misc");
             mAutoUpload = bundle.getBoolean("autoupload");
         }
 
