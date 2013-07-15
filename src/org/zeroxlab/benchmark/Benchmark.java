@@ -425,8 +425,8 @@ public class Benchmark extends TabActivity implements View.OnClickListener {
 
                     LinearLayout mMainViewContainer = new LinearLayout(Benchmark.this);
                     mMainViewContainer.setOrientation(1);
-                    ImageView mIconView = new ImageView(Benchmark.this);
-                    mIconView.setImageResource(R.drawable.icon);
+                    //ImageView mIconView = new ImageView(Benchmark.this);
+                    //mIconView.setImageResource(R.drawable.icon);
 
                     TextView mBannerInfo = new TextView(Benchmark.this);
                     mBannerInfo.setText("0xbench\nSelect benchmarks in the tabs,\nor batch select:");
@@ -479,7 +479,7 @@ public class Benchmark extends TabActivity implements View.OnClickListener {
                         }
                     });
                     mTracker.loadUrl(trackerUrl);
-                    mMainViewContainer.addView(mIconView,wrapContent);
+                    //mMainViewContainer.addView(mIconView,wrapContent);
                     mMainViewContainer.addView(mBannerInfo);
                     mMainViewContainer.addView(mathCheckBox);
                     mMainViewContainer.addView(d2CheckBox);
